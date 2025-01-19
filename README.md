@@ -1,7 +1,5 @@
 # Projet de Calcul Homomorphique
 
-Ce projet illustre un flux de travail complet de chiffrement, calcul homomorphique et déchiffrement en utilisant Python et la bibliothèque TenSEAL.
-
 ---
 
 ## Prérequis
@@ -17,7 +15,7 @@ pip install tenseal
 
 ## Fichiers
 
-1. **`programme1_chiffrement.py`**
+1. **`chiffrement.py`**
    - Chiffre les données et génère les fichiers suivants :
      - `context_prive.json`
      - `context_public.json`
@@ -41,7 +39,7 @@ pip install tenseal
 Exécutez le script `programme1_chiffrement.py` :
 
 ```bash
-python programme1_chiffrement.py
+python chiffrement.py
 ```
 
 Cela générera les fichiers suivants :
@@ -73,22 +71,3 @@ python dechiffrement.py
 ```
 
 Le script lira les fichiers `context_prive.json` et `blocs2.json`, puis affichera le résultat déchiffré en clair.
-
----
-
-## Notes
-
-- Assurez-vous que les fichiers échangés entre les machines sont transmis de manière sécurisée.
-- Ne partagez **jamais** le fichier `context_prive.json`, car il contient des informations sensibles nécessaires pour le déchiffrement.
-
----
-
-## Auteurs
-
-Votre nom ou équipe.
-
----
-
-## Licence
-
-Indiquez ici la licence du projet (par exemple : MIT, GPL, etc.).
